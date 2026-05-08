@@ -1,6 +1,2 @@
-#suma
-
-#resta
-
-
-#este es un ejemplo  
+# Mensaje para el equipo: Aquí deben poner sus casos de uso
+#cambio a subir
