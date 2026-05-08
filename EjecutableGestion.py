@@ -2,15 +2,18 @@
 # OPERACIÓN 04 - CREACIÓN SERVICIO INVÁLIDO
 # =========================================
 
-class ReservaSala:
-    def __init__(self, horas):
+class Servicio:
+
+    def __init__(self, nombre, horas):
 
         if horas <= 0:
             raise ValueError("Horas inválidas")
 
+        self.nombre = nombre
         self.horas = horas
 
     def calcular_costo(self):
+
         return self.horas * 50
 
 
@@ -20,7 +23,7 @@ class ReservaSala:
 
 try:
 
-    servicio_invalido = ReservaSala(-5)
+    servicio_invalido = Servicio("Reserva Sala", -5)
 
     print("Servicio creado correctamente")
 
