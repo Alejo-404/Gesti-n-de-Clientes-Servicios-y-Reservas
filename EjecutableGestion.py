@@ -1,4 +1,4 @@
-#Calculo detallado de costos para la reserva, incluyendo impuestos y descuentos.
+#Calculo detallado de costos para la reserva, incluyendo Impuestos y Descuentos.
 def calcular_costo_detallado(self, tasa_impuesto: float = 0.0, monto_descuento: float = 0.0) -> dict:
     try:
         # Obtener el costo base desde la lógica de Miguel/Jorge
@@ -16,7 +16,7 @@ def calcular_costo_detallado(self, tasa_impuesto: float = 0.0, monto_descuento: 
             "base": costo_base,
             "impuesto": valor_impuesto,
             "descuento": monto_descuento,
-            "total": max(0, total) # Evita totales negativos
+            "total": max(0, total) #Evita totales negativos
         }
 
     except Exception as e:
